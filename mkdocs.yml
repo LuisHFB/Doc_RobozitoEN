@@ -1,1 +1,12 @@
-site_name: My Docs
+site_name: Robozito 2020
+
+theme:
+  name: 'material'
+  pallete:
+    scheme: 'slate'
+    primary: 'blue' 
+    accent: 'red'
+
+  font:
+    text: 'Roboto' 
+    code: 'Roboto Mono'
