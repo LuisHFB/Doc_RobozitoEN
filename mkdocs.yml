@@ -20,7 +20,11 @@ theme:
 
   docs_dir: docs-src
   site_dir: docs
-
+  
+  repo_name: 'LuisHFB/Doc_Robozito'
+  repo_url: 'https://github.com/LuisHFB/Doc_Robozito'
+  edit_uri: 'https://github.com/LuisHFB/Doc_Robozito/edit/master/docs-src/'
+  
 # Copyright
 copyright: 'Copyright &copy; Luis Bueno @ Insper'
 
