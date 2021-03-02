@@ -26,3 +26,6 @@ copyright: 'Copyright &copy; Luis Bueno @ Insper'
 markdown_extensions:
   - toc:
       permalink: true
+nav:
+  - Home: index.md
+  - 'Corte a Laser': laser.md
