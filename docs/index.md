@@ -1,17 +1,3 @@
-# Welcome to MkDocs
+# Robozito 2020
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+O robozito é um projeto que foi criado pelo aluno Wesley Gabriel em conjunto com os técnicos do Insper Fablab para uma atividade da Roadsec 2019 e agora é utilizado como atividade complementar para os alunos de 1o semestre na disciplina de Natureza do Design.
