@@ -2,11 +2,27 @@ site_name: Robozito 2020
 
 theme:
   name: 'material'
-  pallete:
-    scheme: 'slate'
-    primary: 'blue' 
-    accent: 'red'
+  features:
+    - 'navigation.tabs'
+    - 'navigation.sections' 
+    - 'toc.integrate'
+#  logo: assets/logo.png
+#  favicon: images/favicon.png
+
+  palette:
+  - scheme: 'slate'
+    primary: 'red'
+    accent: 'orange'
 
   font:
     text: 'Roboto' 
     code: 'Roboto Mono'
+
+# Copyright
+copyright: 'Copyright &copy; Luis Bueno @ Insper'
+
+# Navegação
+
+markdown_extensions:
+  - toc:
+      permalink: true
