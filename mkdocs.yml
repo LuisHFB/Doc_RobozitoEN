@@ -6,6 +6,8 @@ theme:
     - 'navigation.tabs'
     - 'navigation.sections' 
     - 'toc.integrate'
+#  icon:
+#    repo: "fontawesome/brands/github"
 #  logo: assets/logo.png
 #  favicon: images/favicon.png
 
@@ -23,7 +25,6 @@ theme:
   
   repo_name: 'LuisHFB/Doc_Robozito'
   repo_url: 'https://github.com/LuisHFB/Doc_Robozito'
-  edit_uri: 'https://github.com/LuisHFB/Doc_Robozito/edit/master/docs-src/'
   
 # Copyright
 copyright: 'Copyright &copy; Luis Bueno @ Insper'
@@ -33,6 +34,9 @@ copyright: 'Copyright &copy; Luis Bueno @ Insper'
 markdown_extensions:
   - toc:
       permalink: true
+  - attr_list
+  - codehilight:
+      linenums: true
 nav:
   - Home: index.md
     
