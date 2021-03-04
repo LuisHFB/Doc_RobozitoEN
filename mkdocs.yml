@@ -35,8 +35,9 @@ markdown_extensions:
   - toc:
       permalink: true
   - attr_list
-  - codehilight:
+  - codehilite:
       linenums: true
+      guess_lang: false
 nav:
   - Home: index.md
     
