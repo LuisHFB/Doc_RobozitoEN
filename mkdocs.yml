@@ -20,7 +20,7 @@ theme:
     text: 'Roboto' 
     code: 'Roboto Mono'
 
-  docs_dir: docs-src
+  docs_dir: docs
   site_dir: docs
   
   repo_name: 'LuisHFB/Doc_Robozito'
@@ -41,4 +41,25 @@ markdown_extensions:
 nav:
   - Home: index.md
     
-  - 'Corte a Laser': laser.md
+  - Corpo:
+    - 'Corpo': 'corpo/projeto1.md'
+    - 'Corte à Laser': laser.md
+    #- 'Arquivos do corpo': 'link' 
+  - Braços: 
+    - 'Braços': 'braco/projeto2.md'
+    - 'Motores e Suporte': 'braco/moterEsuporte.md'
+    - 'Impressão 3D': 'braco/3dPrint.md'
+    #- 'Arquivos de impressão 3d' : 'link2'
+  - Eletrônica:
+    - 'Eletrônica': 'eletronica/projeto3.md'
+    - 'Usinagem de PCB': 'eletronica/usinagemPcb.md'
+    - 'Solda': 'eletronica/solda.md' 
+    - 'Montagem da Eletrônica': 'eletronica/montagemEletronica.md'
+    #- 'Arquivos da placa eletrônica' : 'link3'
+  - Programação:
+    - 'Configuração da Arduino IDE': 'programacao/configArduinoIDE.md'
+    - 'Programação': 'programacao/oCodigo.md'
+    - 'Gravando o código na ESP8266': 'programacao/gravandoESP.md'
+  - Montagem: 
+    - 'montagem/montagem.md'
+
