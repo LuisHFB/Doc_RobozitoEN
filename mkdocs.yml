@@ -30,14 +30,6 @@ theme:
 copyright: 'Copyright &copy; Luis Bueno @ Insper'
 
 # Navegação
-
-markdown_extensions:
-  - toc:
-      permalink: true
-  - attr_list
-  - pymdownx.superfences
-  - pymdownx.highlight
-
 nav:
   - Home: index.md
     
@@ -61,5 +53,39 @@ nav:
     - 'Código': 'programacao/oCodigo.md'
     - 'Gravando o código na ESP8266': 'programacao/gravandoESP.md'
   - Montagem: 
-    - 'montagem/montagem.md'
+    - 'BOM': 'montagem/montagem.md'
 
+markdown_extensions:
+  - markdown.extensions.attr_list
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+    - search
