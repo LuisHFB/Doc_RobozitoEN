@@ -55,6 +55,10 @@ nav:
   - Montagem: 
     - 'BOM': 'montagem/montagem.md'
 
+# extras
+extra_css:
+  - css/extra.css
+
 markdown_extensions:
   - markdown.extensions.attr_list
   - markdown.extensions.admonition
