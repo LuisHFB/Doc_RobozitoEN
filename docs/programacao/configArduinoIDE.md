@@ -40,27 +40,27 @@ Para usar e programar ESP32 na IDE do Arduino, precisamos primeiro que ele recon
 
 https://dl.espressif.com/dl/package_esp32_index.json
 
-![Preferencias](https://dummyimage.com/600x400/eee/aaa){: .center}
+![Preferencias](https://dummyimage.com/600x400/eee/aaa)
 
 Com isso, permitimos que a IDE acesse uma pequena “base de dados” no formato .json que contém a configuração de inúmeras placas. Após isso, devemos acessar o menu **Ferramentas** :arrow_right: **Placa**  :arrow_right: **Gerenciador de Placas**.
 
-![Gerenciador de placas](https://dummyimage.com/600x400/eee/aaa){: .center }
+![Gerenciador de placas](https://dummyimage.com/600x400/eee/aaa) 
 
 Nele, pesquise por ***esp32*** na caixa de pesquisa. Em seguida, instale a versão mais recente do driver que irá aparecer: ***esp32 by Espressif Systems***, conforme ilustrado na figura a seguir:
 
-![esp32 by Espressif](https://dummyimage.com/600x400/eee/aaa){: .center }
+![esp32 by Espressif](https://dummyimage.com/600x400/eee/aaa)
 
 Feito isso, você deve selecionar a placa **ESP32 Dev Module**, no menu de placas, para programar na ESP.
 
-![Dev Module](https://dummyimage.com/600x400/eee/aaa){: .center }
+![Dev Module](https://dummyimage.com/600x400/eee/aaa)
 
 Por fim, basta você selecionar a porta a qual a ESP está conectada e você estará pronto para enviar códigos para ela!
 
-![Porta Serial](https://dummyimage.com/600x400/eee/aaa){: .center }
+![Porta Serial](https://dummyimage.com/600x400/eee/aaa)
 
 ## Instalando as bibliotecas
 
-![Gerenciador de Bibliotecas](https://dummyimage.com/600x400/eee/aaa){: .center }
+![Gerenciador de Bibliotecas](https://dummyimage.com/600x400/eee/aaa)
 
 Para realizar a instalação das bibliotecas necessárias para nosso código funcionar corretamente devemos ir em **Ferramentas** :arrow_right: **Gerenciador de Bibliotecas**
 
