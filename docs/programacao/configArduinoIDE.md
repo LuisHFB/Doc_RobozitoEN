@@ -40,27 +40,27 @@ Para usar e programar ESP32 na IDE do Arduino, precisamos primeiro que ele recon
 
 https://dl.espressif.com/dl/package_esp32_index.json
 
-![Placeholder](https://dummyimage.com/600x400/eee/aaa){: .center}
+![Preferencias](https://dummyimage.com/600x400/eee/aaa){: .center}
 
 Com isso, permitimos que a IDE acesse uma pequena “base de dados” no formato .json que contém a configuração de inúmeras placas. Após isso, devemos acessar o menu **Ferramentas** :arrow_right: **Placa**  :arrow_right: **Gerenciador de Placas**.
 
-![Placeholder](https://dummyimage.com/600x400/eee/aaa){: .center }
+![Gerenciador de placas](https://dummyimage.com/600x400/eee/aaa){: .center }
 
 Nele, pesquise por ***esp32*** na caixa de pesquisa. Em seguida, instale a versão mais recente do driver que irá aparecer: ***esp32 by Espressif Systems***, conforme ilustrado na figura a seguir:
 
-![Placeholder](https://dummyimage.com/600x400/eee/aaa){: .center }
+![esp32 by Espressif](https://dummyimage.com/600x400/eee/aaa){: .center }
 
 Feito isso, você deve selecionar a placa **ESP32 Dev Module**, no menu de placas, para programar na ESP.
 
-![Placeholder](https://dummyimage.com/600x400/eee/aaa){: .center }
+![Dev Module](https://dummyimage.com/600x400/eee/aaa){: .center }
 
 Por fim, basta você selecionar a porta a qual a ESP está conectada e você estará pronto para enviar códigos para ela!
 
-![Placeholder](https://dummyimage.com/600x400/eee/aaa){: .center }
+![Porta Serial](https://dummyimage.com/600x400/eee/aaa){: .center }
 
 ## Instalando as bibliotecas
 
-![Placeholder](https://dummyimage.com/600x400/eee/aaa){: .center }
+![Gerenciador de Bibliotecas](https://dummyimage.com/600x400/eee/aaa){: .center }
 
 Para realizar a instalação das bibliotecas necessárias para nosso código funcionar corretamente devemos ir em **Ferramentas** :arrow_right: **Gerenciador de Bibliotecas**
 
