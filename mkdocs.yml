@@ -1,34 +1,45 @@
-site_name: Robozito 2020
+site_name: 'Robozito 2020'
+repo_name: 'LuisHFB/Doc_Robozito'
+repo_url: 'https://github.com/LuisHFB/Doc_Robozito'
+site_description: 'Robo OpenSource para atividade de entrosamento de grupo'
+copyright: 'Copyright &copy; Luis Bueno @ Insper'
 
-theme:
-  name: 'material'
+theme: 
+  name: material
   features:
     - 'navigation.tabs'
     - 'navigation.sections' 
     - 'toc.integrate'
-#  icon:
-#    repo: "fontawesome/brands/github"
-#  logo: assets/logo.png
-#  favicon: images/favicon.png
+# logo: assets/logo
+# favicon: images/favicon
 
   palette:
-  - scheme: 'slate'
-    primary: 'red'
-    accent: 'orange'
+
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red 
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
 
   font:
     text: 'Roboto' 
     code: 'Roboto Mono'
 
-  docs_dir: docs
-  site_dir: docs
+# docs_dir: docs-src
+# site_dir: docs
   
-  repo_name: 'LuisHFB/Doc_Robozito'
-  repo_url: 'https://github.com/LuisHFB/Doc_Robozito'
-  
-# Copyright
-copyright: 'Copyright &copy; Luis Bueno @ Insper'
-
 # Navegação
 nav:
   - Home: index.md
@@ -56,8 +67,8 @@ nav:
     - 'BOM': 'montagem/montagem.md'
 
 # extras
-extra_css:
-  - stylesheets/extra.css
+#extra_css:
+#  - stylesheets/extra.css
 
 markdown_extensions:
   - markdown.extensions.attr_list
@@ -93,3 +104,8 @@ markdown_extensions:
 
 plugins:
     - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: 'https://github.com/LuisHFB/Doc_Robozito'
