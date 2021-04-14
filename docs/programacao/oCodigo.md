@@ -108,7 +108,7 @@
       servo3.write(90); 
       servo4.write(90); 
 
-      WiFi.softAP("padra1za1");
+      WiFi.softAP("nomeWiFi");
 
       IPAddress myIP = WiFi.softAPIP();
       Serial.print("AP IP address: ");
@@ -156,31 +156,33 @@
  
 ```
 ## Configurando e Nomeando os Servo Motores
-``` c linenums="10" 
+``` c linenums="11" 
 Servo servo1;        // Create the Servo and name it "servo1"
 Servo servo2;        // Create the Servo and name it "servo2"
 Servo servo3;        // Create the Servo and name it "servo3"
 Servo servo4;        // Create the Servo and name it "servo4"
 ```
 ## Definindo os pinos de controle de cada Servo Motor
-``` c linenums="15" 
+``` c linenums="16" 
 
 #define SERVO1    D0
 #define SERVO2    D2
 #define SERVO3    D3
 #define SERVO4    D4
 ```
-## Chamada para Comunicação Serial
-``` c linenums="15" hl_lines="107"
+## Seta uso de Comunicação Serial
+``` c linenums="21" 
 #define USE_SERIAL Serial
 ```
 ## Chamada para gerar o Web Server
-``` c linenums="15" hl_lines="107"
+E define a porta que será usada
+
+``` c linenums="23" 
 ESP8266WebServer server(80);
 WebSocketsServer webSocket = WebSocketsServer(81);
 ```
-## 
-``` c linenums="15" hl_lines="107"
+## Template da página Web Gerada 
+``` c linenums="26" 
 String website = "<html><head><script>"
         "var connection = new WebSocket('ws://' + location.hostname + ':81/', ['arduino']);"
         "connection.onopen = function(){ connection.send('Connected on ' + new Date()); };"
@@ -197,8 +199,8 @@ String website = "<html><head><script>"
         "<option value=\"R\">Red</option><option value=\"G\">Green</option><option value=\"B\">Blue</option><option value=\"W\">White</option>"
         "</select><br/><br/>Intensity: <br/> <input id=\"r\" type=\"range\" min=\"0\" max=\"255\" step=\"1\" oninput=\"sendValue();\"/><br/></body></html>";
 ```
-## 
-``` c linenums="15" hl_lines="107"
+## Cria a função que trata os dados recebidos do celular 
+``` c linenums="42" 
 void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length) {
 
   switch (type) {
@@ -238,12 +240,10 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length
 
 }
 ```
-## 
-``` c linenums="15" hl_lines="107"
-void setup() {
-```
-## 
-``` c linenums="15" hl_lines="107"
+## Inicializa a comunicação serial com baud rate de 115200 
+``` c linenums="81" 
+ void setup() {
+
   USE_SERIAL.begin(115200);
 
   //USE_SERIAL.setDebugOutput(true);
@@ -256,10 +256,10 @@ void setup() {
     USE_SERIAL.printf("[SETUP] BOOT WAIT %d...\n", t);
     USE_SERIAL.flush();
     delay(300);
-  }
+ }
 ```
-## 
-``` c linenums="15" hl_lines="107"
+## Inicializa os Servo Motores e posiciona eles em 90° 
+``` c linenums="97" 
   servo1.attach(SERVO1);
   servo2.attach(SERVO2);
   servo3.attach(SERVO3);
@@ -270,9 +270,11 @@ void setup() {
   servo3.write(90); 
   servo4.write(90); 
 ```
-## 
-``` c linenums="15" hl_lines="107"
-  WiFi.softAP("padra1za1");
+## Define o nome da rede para "nomeWiFi" e o que será feito no loop do WebSocket
+Caso queira alterar o nome da rede para não gerar conflito com outros robozitos, alterar a linha abaixo.
+
+``` c linenums="107" hl_lines="1"
+  WiFi.softAP("nomeWiFi");
 
   IPAddress myIP = WiFi.softAPIP();
   Serial.print("AP IP address: ");
@@ -300,8 +302,8 @@ void setup() {
   
 }
 ```
-## 
-``` c linenums="15" hl_lines="107"
+## Inicia o Loop 
+``` c linenums="135" 
 void loop() {
   webSocket.loop();
   server.handleClient();
