@@ -3,7 +3,7 @@
 
 O robozito é um projeto que foi criado pelo aluno Wesley Gabriel em conjunto com os técnicos do Insper Fablab para uma atividade da Roadsec 2019 e agora é utilizado como atividade complementar para os alunos de 1o semestre na disciplina de Natureza do Design.
 
-![](imgs/RobozitoFrente.png){: align=left  style="height:400px"}
+![RobozitoFrente](imgs/RobozitoFrente.png){: align=left  style="height:400px"}
 
 O robozito apresenta a maioria das suas peças fabricados com máquinas disponíveis em qualquer Fablab, como:
 
