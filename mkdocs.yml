@@ -43,16 +43,7 @@ theme:
 # Navegação
 nav:
   - Home: index.md
-    
-  - Corpo:
-    - 'Projetando o Corpo': 'corpo/projeto1.md'
-    - 'Corte à Laser': laser.md
-    #- 'Arquivos do corpo': 'link' 
-  - Braços: 
-    - 'Projetando os Braços': 'braco/projeto2.md'
-    - 'Motores e Suporte': 'braco/moterEsuporte.md'
-    - 'Impressão 3D': 'braco/3dPrint.md'
-    #- 'Arquivos de impressão 3d' : 'link2'
+
   - Eletrônica:
     - 'Projetando a placa eletrônica': 'eletronica/projeto3.md'
     - 'Usinagem de PCB': 'eletronica/usinagemPcb.md'
@@ -63,7 +54,17 @@ nav:
     - 'Configuração da Arduino IDE': 'programacao/configArduinoIDE.md'
     - 'Código': 'programacao/oCodigo.md'
     - 'Gravando o código na ESP8266': 'programacao/gravandoESP.md'
-  - Montagem: 
+  - Corpo:
+    - 'Projetando o Corpo': 'corpo/projeto1.md'
+    - 'Corte à Laser': laser.md
+    #- 'Arquivos do corpo': 'link' 
+  - Braços: 
+    - 'Projetando os Braços': 'braco/projeto2.md'
+    - 'Motores e Suporte': 'braco/moterEsuporte.md'
+    - 'Rodas e Apoio': 'braco/rodaApoio.md'
+    - 'Impressão 3D': 'braco/3dPrint.md'
+    #- 'Arquivos de impressão 3d' : 'link2'
+   - Montagem: 
     - 'BOM': 'montagem/montagem.md'
 
 # extras
