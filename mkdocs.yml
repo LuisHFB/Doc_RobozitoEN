@@ -64,7 +64,7 @@ nav:
     - 'Rodas e Apoio': 'braco/rodaApoio.md'
     - 'Impressão 3D': 'braco/3dPrint.md'
     #- 'Arquivos de impressão 3d' : 'link2'
-   - Montagem: 
+  - Montagem: 
     - 'BOM': 'montagem/montagem.md'
 
 # extras
