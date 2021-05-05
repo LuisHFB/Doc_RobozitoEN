@@ -6,11 +6,31 @@ O processo de usinagem remove o cobre da placa de fenolite utilizando a fresas e
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cCm-UL-dCEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Abaixo deixo os arquivos **NC** para que você possa usinar suas placas. *Estes arquivos geram 36 placas (que cabem em um fenolite 100x100mm)*
-!!! info "Arquivos CNC"
+??? info "Arquivos CNC"
     [Furação com broca 0,9mm](file/furos09.nc)
     
     [Usinagem das trilhas](file/trilhas.nc) 
     
     [Corte do Contorno da Placa](file/corteContorno.nc) 
     
+  Caso esteja fazendo um projeto novo de placa precisamos exportar os gerbers da sua placa pelo Eagle para usarmos em um software de CAM que gerará os arquivos necessários para sua fresadora.
 
+  *Caso vá mandar fabricar a sua placa externamente, serão pedidos os Gerbers da placa para fabricação*
+  
+??? tip "Tutorial Exportação de Gerbers"
+    [Exportação Gerbers](https://youtu.be/Sa1pzXn8-Es?t=377) 
+
+Após a Exportação iremos utilizar o [FlatCAM](http://flatcam.org/download), software opensource de edição e criação de Códigos G para usinagem em fresadoras CNC, para gerar nossos arquivos para a Fresadora.
+
+![FlatCAM](imgs/FlatCAM.png){: .center width=900px}
+Caso queira só gerar um arquivo com menos placas seguem os gerbers originais abaixo, assim como um tutorial do FlatCAM.
+
+??? info "Gerbers"
+    [Furação](file/Gerber/drills_1_16.xln)
+
+    [Trilhas](file/Gerber/Silvermask_Bot.gbr)
+
+    [Corte](file/Gerber/Other.gbr)
+    
+!!! tip "Tutorial FlatCAM"
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/--Cb11heuHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
