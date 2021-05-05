@@ -9,4 +9,15 @@ Para fazer o projeto utilizamos o [Eagle](https://www.autodesk.com/products/eagl
 
     https://www.instructables.com/From-Idea-to-Reality-How-to-Design-Circuits-and-Cr/
     
+!!! exemple ""
+    ![SCH](imgs/esquematico.png){: width=400px}
+    ![BRD](imgs/Board.png){: width=400px}
 
+    **A esquerda temos nosso esquemático e a direita nosso layout da placa no Eagle**
+
+Caso queira alterar a Esquemático da placa ou o Layout original, seguem os arquivos abaixo para abrir no Eagle.
+
+!!! info "Arquivos do Eagle"
+    [**Esquemático**](file/alimentaçãorobozito.sch)
+
+    [**Layout**](file/alimentaçãorobozito.brd)
