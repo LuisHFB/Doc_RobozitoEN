@@ -4,4 +4,4 @@ Antes de fazer a montagem da eletrônica e fixar tudo no corpo do Robozito nós 
 
 ![MontagemEletronica](imgs/EletronicaRobozito.svg){: .center width=500px}
 
- Após a montagem eletrônica, faça a [programação da placa](programacao/configArduinoIDE/) e veja se os motores se movimentam quando ela é ligar. Depois acesse a rede da placa para testar os controles de cada motor.
+ Após a montagem eletrônica, faça a [programação da placa](Doc_Robozito/programacao/configArduinoIDE/) e veja se os motores se movimentam quando ela é ligar. Depois acesse a rede da placa para testar os controles de cada motor.

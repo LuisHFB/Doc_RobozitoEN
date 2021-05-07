@@ -60,7 +60,6 @@ nav:
     #- 'Arquivos do corpo': 'link' 
   - Braços: 
     - 'Projetando os Braços': 'braco/projeto2.md'
-    - 'Motores e Suporte': 'braco/moterEsuporte.md'
     - 'Rodas e Apoio': 'braco/rodaApoio.md'
     - 'Impressão 3D': 'braco/3dPrint.md'
     #- 'Arquivos de impressão 3d' : 'link2'
