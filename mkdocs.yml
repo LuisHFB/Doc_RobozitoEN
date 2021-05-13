@@ -52,17 +52,17 @@ nav:
     - 'Eletronic Assembly': 'eletronica/montagemEletronica.md'
     #- 'Arquivos da placa eletrônica' : 'link3'
   - Programing:
-    - 'Configuração da Arduino IDE': 'programacao/configArduinoIDE.md'
-    - 'Código': 'programacao/oCodigo.md'
-    - 'Gravando o código na ESP8266': 'programacao/gravandoESP.md'
+    - 'Arduino IDE Config': 'programacao/configArduinoIDE.md'
+    - 'Code': 'programacao/oCodigo.md'
+    - 'Upload the Code to ESP8266': 'programacao/gravandoESP.md'
   - Body:
-    - 'Projetando o Corpo': 'corpo/projeto1.md'
-    - 'Corte à Laser': laser.md
+    - 'Body Project': 'corpo/projeto1.md'
+    - 'Laser Cutting': laser.md
     #- 'Arquivos do corpo': 'link' 
   - Arms: 
-    - 'Projetando os Braços': 'braco/projeto2.md'
-    - 'Rodas e Apoio': 'braco/rodaApoio.md'
-    - 'Impressão 3D': 'braco/3dPrint.md'
+    - 'Arms Project': 'braco/projeto2.md'
+    - 'Whells & Support': 'braco/rodaApoio.md'
+    - '3D Printing': 'braco/3dPrint.md'
     #- 'Arquivos de impressão 3d' : 'link2'
   - Build: 
     - 'BOM': 'montagem/montagem.md'
