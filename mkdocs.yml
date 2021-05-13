@@ -1,11 +1,12 @@
 site_name: 'Robozito 2020'
-repo_name: 'LuisHFB/Doc_Robozito'
-repo_url: 'https://github.com/LuisHFB/Doc_Robozito'
-site_description: 'Robo OpenSource para atividade de entrosamento de grupo'
+repo_name: 'LuisHFB/Doc_RobozitoEN'
+repo_url: 'https://github.com/LuisHFB/Doc_RobozitoEN'
+site_description: 'OpenSource Robo for team building activities'
 copyright: 'Copyright &copy; Luis Bueno @ Insper'
 
 theme: 
   name: material
+  language: en
   features:
     - 'navigation.tabs'
     - 'navigation.sections' 
@@ -44,26 +45,26 @@ theme:
 nav:
   - Home: index.md
 
-  - Eletrônica:
-    - 'Projetando a placa eletrônica': 'eletronica/projeto3.md'
-    - 'Usinagem de PCB': 'eletronica/usinagemPcb.md'
-    - 'Solda': 'eletronica/solda.md' 
-    - 'Montagem da Eletrônica': 'eletronica/montagemEletronica.md'
+  - Eletronic:
+    - 'PCB Project': 'eletronica/projeto3.md'
+    - 'PCB Machining': 'eletronica/usinagemPcb.md'
+    - 'Soldering': 'eletronica/solda.md' 
+    - 'Eletronic Assembly': 'eletronica/montagemEletronica.md'
     #- 'Arquivos da placa eletrônica' : 'link3'
-  - Programação:
+  - Programing:
     - 'Configuração da Arduino IDE': 'programacao/configArduinoIDE.md'
     - 'Código': 'programacao/oCodigo.md'
     - 'Gravando o código na ESP8266': 'programacao/gravandoESP.md'
-  - Corpo:
+  - Body:
     - 'Projetando o Corpo': 'corpo/projeto1.md'
     - 'Corte à Laser': laser.md
     #- 'Arquivos do corpo': 'link' 
-  - Braços: 
+  - Arms: 
     - 'Projetando os Braços': 'braco/projeto2.md'
     - 'Rodas e Apoio': 'braco/rodaApoio.md'
     - 'Impressão 3D': 'braco/3dPrint.md'
     #- 'Arquivos de impressão 3d' : 'link2'
-  - Montagem: 
+  - Build: 
     - 'BOM': 'montagem/montagem.md'
 
 # extras
@@ -108,4 +109,13 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: 'https://github.com/LuisHFB/Doc_Robozito'
+      link: 'https://github.com/LuisHFB/Doc_RobozitoEN'
+  alternate:
+    # Switch to Portuguese
+    - name: Português
+      link: 'https://luishfb.github.io/Doc_Robozito/'
+      lang: pt
+    # Switch to English
+    - name: English
+      link: 'https://luishfb.github.io/Doc_RobozitoEN/'
+      lang: en
